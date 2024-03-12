@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:500px;
+    display:flex;
+    justify-content: center;
+}
+
+#pokebola{
+    height: 100px;
+    margin-top: 110px;
+    position: absolute;
+    animation-name: pokeball;
+    animation-duration: 3s;
+    animation-delay: 2s;
+
+    /* animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both; */
+
+    animation:3  1.8s 3 alternate;
+}
+
+@keyframes pokeball{
+
+    0% {transform: translatex(-80);}
+
+    25% {transform: translatex(-200px);}
+
+    50% { transform: translate(100%,200px);}
+
+    75% {transform:translatex(calc(150px));}
+
+    100% {transform:translatex(calc(-50px));}
+}
